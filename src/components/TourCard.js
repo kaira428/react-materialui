@@ -33,19 +33,22 @@ const theme = createTheme({
   },
 });
 
-const TourCard = () => {
+const TourCard = ({
+  name,
+  duration,
+  rating,
+  numberOfReviews,
+  price,
+  image,
+}) => {
   return (
     <Grid item xs={3}>
       <ThemeProvider theme={theme}>
         <Paper elevation={3}>
-          <img
-            src="https://image.cnbcfm.com/api/v1/image/107090171-1658155987037-slack-imgs.jpg?v=1658156107&w=630&h=354&ffmt=webp&vtcrop=y"
-            alt="Plane"
-            className="img"
-          />
+          <img src={image} alt="tour_image" className="img" />
           <Box paddingX={1}>
             <Typography variant="subtitle1" component="h2">
-              Airplanes
+              {name}
             </Typography>
           </Box>
           <Box
@@ -56,7 +59,7 @@ const TourCard = () => {
           >
             <AccessTime sx={{ width: 12.5, marginLeft: 0.5 }} />
             <Typography variant="body2" component="p" marginLeft={0.5}>
-              5 hours
+              {duration} hours
             </Typography>
           </Box>
           <Box
@@ -68,22 +71,27 @@ const TourCard = () => {
           >
             <Rating
               name="read-only"
-              value={4.5}
+              value={rating}
               readOnly
               precision={0.5}
               size="small"
               sx={{ marginLeft: 0.5 }}
             />
             <Typography variant="body2" component="p" marginLeft={0.5}>
-              4.5
+              {rating}
             </Typography>
             <Typography variant="body3" component="p" marginLeft={1.5}>
-              (777 reviews)
+              ({numberOfReviews} reviews)
             </Typography>
           </Box>
           <Box>
-            <Typography variant="h6" component="h3" marginTop={0} marginLeft={1}>
-              From SGD 1,234
+            <Typography
+              variant="h6"
+              component="h3"
+              marginTop={0}
+              marginLeft={1}
+            >
+              From SGD {price}
             </Typography>
           </Box>
         </Paper>

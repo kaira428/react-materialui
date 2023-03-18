@@ -1,4 +1,4 @@
-[
+const cities = [
     {
       "id": 1,
       "name": "Niagara Falls",
@@ -84,3 +84,5 @@
       ]
     }
   ]
+
+  export default cities;
