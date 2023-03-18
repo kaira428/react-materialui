@@ -61,7 +61,7 @@ const cities = [
           "rating": 4.5,
           "numberOfReviews": 462,
           "price": 465,
-          "image": "https://s3.amazonaws.com/virginhotelslv.com/content/uploads/2021/04/Website-Hero-Images-Mohegan-Sun-B-1300x420-1.jpg"
+          "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/12/Bellagio.jpg"
         },
         {
           "id": 6,

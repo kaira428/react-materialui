@@ -45,7 +45,9 @@ const TourCard = ({
     <Grid item xs={3}>
       <ThemeProvider theme={theme}>
         <Paper elevation={3}>
-          <img src={image} alt="tour_image" className="img" />
+          <Box>
+            <img src={image} alt={name} className="img" />
+          </Box>
           <Box paddingX={1}>
             <Typography variant="subtitle1" component="h2">
               {name}

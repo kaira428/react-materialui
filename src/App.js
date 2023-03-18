@@ -33,7 +33,6 @@ function App() {
                   image={tour.image}
                 />
               ))}
-              <TourCard />
             </Grid>
           </>
         ))}
