@@ -42,7 +42,7 @@ const TourCard = ({
   image,
 }) => {
   return (
-    <Grid item xs={3}>
+    <Grid item xs={12} md={3}>
       <ThemeProvider theme={theme}>
         <Paper elevation={3}>
           <Box>
